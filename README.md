@@ -52,6 +52,16 @@ When the server is started, head over to http://localhost:9090/ on a browser.
 
 Head unto a browser and enter: http://localhost:3000/
 enter admin and admin for username and password
+When grafana opens, add a new Data source, and choose Prometheus.
+For the config,on the URL text box, use the prometheus link:http://localhost:9090/
+
+In case you are running grafana from a Docker container: docker run -d --name=grafana -p 3001:3000
+grafana/grafana-enterprise
+For the config,on the URL text box, use the prometheus link instead: http://host.docker.internal:9090.
+
+Add a new Dashboard and select metrics
+https://www.youtube.com/watch?v=gJZhdEJvZmc
+
 
 
 
